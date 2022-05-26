@@ -8,3 +8,4 @@ pickleshare==0.7.5
 nltk==3.7
 numpy==1.22.3
 protobuf==3.20.1
+sklearn==0.0
