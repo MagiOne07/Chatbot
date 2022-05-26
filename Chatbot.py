@@ -12,6 +12,8 @@ import string
 import yfinance as yf
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from difflib import SequenceMatcher
+import nltk
+nltk.download('vader_lexicon')
 with open('Intent.json') as file:
     data = json.load(file)
     select = option_menu(
