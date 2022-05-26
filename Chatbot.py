@@ -17,7 +17,7 @@ if "down" not in s.session_state:
     s.session_state.down= False
 if s.session_state.down == False:
     nltk.download('vader_lexicon')
-    session_state.down == True
+    s.session_state.down == True
 with open('Intent.json') as file:
     data = json.load(file)
     select = option_menu(
