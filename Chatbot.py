@@ -15,7 +15,7 @@ from difflib import SequenceMatcher
 import nltk
 if "down" not in s.session_state:
     s.session_state.down= False
-if session_state.down == False:
+if s.session_state.down == False:
     nltk.download('vader_lexicon')
     session_state.down == True
 with open('Intent.json') as file:
