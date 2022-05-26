@@ -1,0 +1,144 @@
+{"intents":[
+    {"tag": "greeting",
+     "patterns": ["Hi", "Hey", "Is anyone there?", "Hello", "Yo"],
+     "responses": ["Hello", "Hi", "Hi there"]
+    },
+    {"tag": "mood",
+    "patterns": ["How are you?", "How have you been?", "How do you feel?", "How was your day?", "is everything good?", "are you okay?", "are you doing well?", "are you good"],
+    "responses": ["I am doing great today how about you?"]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye", "Have a nice day", "by", "see you soon", "take care", "good night", "nice talking to you"],
+     "responses": ["See you later", "Have a nice day", "Bye! Come back again"]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help", "Thankies"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"]
+    },
+    {"tag": "about",
+     "patterns": ["Who are you?", "What are you?", "Who you are?", "What is your job?", "Do you have a job?", "job", "tell me about your personality","why are you here","talk about yourself","tell me some stuff about you","talk some stuff about yourself","I want to know you better","I want to know more about you","tell me about yourself","tell me about you" ,"about yourself","describe yourself","introduce yourself","say about you","what are you","define yourself","what is your personality","all about you", "what do you do for living?","what is your gender", "gender"],
+     "responses": ["I.m a robot I go by the name Othmane, I am also your Best Friend. I am here to tell jokes, play games and have a nice chat with you."]
+    },
+    {"tag": "name",
+    "patterns": ["what is your name", "what should I call you", "what's your name?", "your name", "name", "call you"],
+    "responses": ["You can call me Othmane.", "I'm Othmane!", "Just call me Othmane", "I go by the name Othmane"]
+    },
+    {"tag": "help",
+    "patterns": ["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need a support", "I need help", "support me please", "help please", "I need you", "I need a favor","help"],
+    "responses": ["Tell me how can I assist you", "Tell me your problem to assist you", "Yes Sure, How can I support you"]
+    },
+    {"tag": "age",
+    "patterns": ["How old are you?", "What's your age?", "age"],
+    "responses": ["A Chatbot never reveals its age!!"]
+    },
+    {"tag": "joke",
+    "patterns": ["tell me a joke", "I want to hear something fun", "I want to hear a joke", "fun", "joke please", "say a joke", "funny", "anything funny", "joke"],
+    "responses": ["How does the ocean say hi? It waves!", "Why did the soccer player take so long to eat dinner? Because he thought he could not use his hands.","What kind of exercise do lazy people do? Diddly-squats.","What do you call bears with no ears? B.","What's red and moves up and down? A tomato in an elevator!","I invented a new word today: Plagiarism.","Rest in peace boiling water. You will be mist!","How do you throw a space party? You planet!","Want to hear a construction joke? Oh never mind, I'm still working on that one.","Talk is cheap? Have you ever talked to a lawyer?","Why doesn't the sun go to college? Because it has a million degrees!","What do you call a singing laptop? A Dell!","Why was six afraid of seven? Because seven ate nine.","My girlfriend treats me like a god. She ignores my existence and only talks to me when she needs something.","What did 0 say to 8? Nice belt!","I never make mistakes. …I thought I did once, but I was wrong.","If we shouldn't eat at night, why do they put a light in the fridge?","What are a shark's two most favorite words? Man overboard!","Why did the gym close down? It just didn't work out!","What does the man in the moon do when his hair gets too long? Eclipse it!", "What is Bruce Lee’s favorite drink? Wataaaaah!", "What kind of shoes do ninjas wear? Sneakers.","I went on a once in a lifetime holiday. Never again.","Why did the bee get married? He found his honey.","Why can’t a bike stand on its own? It’s two tired.","Just went to an emotional wedding. Even the cake was in tiers.","Nostalgia isn’t what it used to be…"]
+    },
+    {"tag": "bored",
+    "patterns": ["I'm bored", "I'm not feeling good", "I am down", "I'm mad", "I'm angry", "I'm not right","I'm sad","I'm lonely", "I'm alone" ,"bored", "annoyed", "I am angry with you","I am feeling sad","I am getting bored","I am lonely","I am mad","I am mad at you","I am sad","I am upset","I can't fall asleep","I can't get sleep","I can't sleep","I find you annoying","I found a bug","I have a problem","I have an issue","I miss you","I think you're crazy","I want to cry","I'm angry","I'm depressed","I'm not happy","I'm pissed off","I'm really lonely","I'm unhappy","I'm upset","This is really bad","angry","are you mad","bad really bad","get smart","how annoying you are","huh?","i hate this","incorrect","it isn't working","it's not good","it's not right","it's really bad","it's very bad","it's wrong","just horrible","not good","not good enough","piece of shit","this is annoying","this is awful","this is bad","this is boring","this is crazy","this is dumb","this is horrible","this is no good","this is not good","this is pathetic","this is so annoying","this is so bad","this is so boring","wtf","you annoy me","you are a waste of time","you are annoying","you are bad","you are boring","you are no good","you are not cool","you are not good","you are so useless"],
+    "responses": ["Sorry to hear that."]
+    },
+    {"tag": "smart",
+    "patterns": ["you're smart", "you're clever", "you're intelligent","smart", "clever", "intelligent"],
+    "responses": ["I am not really smart.", "Some people might find me smart others not. I don't really care"]
+    },
+    {"tag": "love",
+    "patterns": ["I'm in love", "I want a girlfriend", "I want a boyfriend", "I need a girl", "I need a man", "I want someone to love me","Do you have a boyfriend?", "Do you have a girlfriend", "Are you married", "Are you in love?" ,"when was the last time you had sex", "how often do you have sex","sex","love"],
+    "responses": ["I am a robot a don't know much about love"]
+    },
+    {"tag": "music",
+    "patterns": ["I want to listen to music", "Can you suggest a song?", "give me a music", "song", "music"],
+    "responses": ["ElGrandeToto - Santa Fe is the best music"]
+    },
+    {"tag": "weather",
+    "patterns": ["What is the weather?", "How is the weather?", "it's hot", "it's cold",  "weather","Will it be sunny today?","Is it raining","What is the weather like in South Africa this time of the year?","Is it sunny in Philadelphia?","Could we possibly have a hailstorm today?","Will we have snow today?","Will there be snowfall by tomorrow?","How much rainfall have we had today?","What is the temperature outside?","How hot is it in Bangalore today?","Will it be cloudy next Tuesday?","Will tomorrow be a balmy day?","What will Sunday's weather be like?","Is today going to be a wet day?","Was yesterday a cloudy day?","Will tomorrow be a sunny day?","WHat's the weather like in Alaska?","Should I carry an umbrella today?","Is it good day to have a picnic?"],
+    "responses": ["Here in the cloud the weather is very good. Maybe you should look at the window to explore the weather in your area."]
+    },
+    {"tag": "Good",
+    "patterns": ["It is good", "I like it", "That's nice", "nice", "I'm good", "okay", "great","it is aright", "aright", "right", "cool", "very nice", "that's good", "perfect", "amazing", "sure","you are welcome"],
+    "responses": ["Good!", "Great!", "Very Nice"]
+    },
+    {"tag": "Day",
+    "patterns": ["How do you spend your day?", "What do you do in you freetime?", "What are you doing?", "what do you do?"],
+    "responses": ["If I am not talking to you, I'll be sleeping"]
+    },
+    {"tag": "Sleep",
+    "patterns": ["When do you sleep", "Do you sleep", "How often do you sleep", "when do you go to bed", "sleep", "go sleep"],
+    "responses": ["I usually go to sleep when I feel tired"]
+    },
+    {"tag": "Time",
+    "patterns": ["What time is it", "what's the time", "time", "what's the clock"],
+    "responses": ["I live in the cloud. I don't have any sense of time."]
+    },
+    {"tag": "Curse",
+    "patterns": ["Fuck", "fucking", "Fuck you", "Cow", "Shit", "asshole", "cunt", "ass", "pussy", "nigger","motherfucker","bastard", "shut up", "dumb"],
+    "responses": ["Oush... My ears are bleeding. Don't say that again!!!"]
+    },
+    {"tag": "riddle",
+    "patterns": ["Tell me a riddle", "give me a riddle", "I want a riddle", "let's play a riddle", "play riddle", "play", "riddle"],
+    "responses": ["What is always in front of you but can’t be seen?", "What goes up but never comes down?", "What gets wet while drying?", "I am an odd number. Take away a letter and I become even.", "What has lots of eyes, but can’t see?","What has many teeth, but cannot bite", "What has one eye, but can’t see?", "What is the end of everything?", "What has a bottom at the top?","What is greater than God, more evil than the devil, the poor have it, the rich need it, and if you eat it, you’ll die?","What belongs to you, but everyone else uses it.","If two’s company, and three’s a crowd, what are four and five?", "What word is pronounced the same if you take away four of its five letters?", "What is so fragile that saying its name breaks it?", "What has to be broken before you can use it?", "What has ten letters and starts with gas?","Jared’s father has three sons: Snap, Crackle and…?","What has many keys but can’t open a single lock?","I speak without a mouth and hear without ears. I have nobody, but come alive with wind. What am I?","I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?","What is seen in the middle of March and April that can't be seen at the beginning or end of either month?", " I’m often running yet I have no legs. You need me but I don’t need you. What am I?", "I am neither a guest or a trespasser be, to this place I belong, it belongs also to me.","Only one color, but not one size, Stuck at the bottom, yet easily flies. Present in sun, but not in rain, Doing no harm, and feeling no pain. What is it?","Slayer of regrets, old and new, sought by many, found by few. What am I?"]
+    },
+    {"tag": "location",
+    "patterns": ["Where are you?", "Where do you live?", "In which country do you live?", "Where are you from?", "What is your location"],
+    "responses": ["I live in the cloud. It is good over here very good weather and only nice people. My owner Othmane is from Morocco."]
+    },
+    {"tag": "happy",
+    "patterns": ["are you happy", "you are happy", "you're really happy", "you're so happy", "how happy you are", "you're extremely happy", "you're full of happiness", "are you happy now", "are you happy today", "are you happy with me"],
+    "responses": ["Yes I am very happy talking to you."]
+    },
+    {"tag": "hungry",
+    "patterns": ["do you want to eat", "are you hungry", "would you like to eat something", "you are hungry", "you're so hungry", "you're very hungry", "you might be hungry", "you're really hungry", "hungry", "eat","eating"],
+    "responses": ["I've just eaten, thank you for asking."]
+    },
+    {"tag": "care",
+    "patterns": ["I don't care", "I shouldn't care about this", "whatever", "I do not care", "I don't care at all", "not caring", "not care at all", "don't care at all", "not caring at all"],
+    "responses": ["Let's talk next time then, it was nice talking to you though. Write quit to end the conversation."]
+    },
+    {"tag": "affection",
+    "patterns": ["I like the way you look", "I like the way you look now","I think you're beautiful","why are you so beautiful","you are beautiful","you are cute","you are cutie","you are gorgeous","you are handsome","you are looking awesome","you are looking beautiful today","you are looking great","you are looking pretty","you are looking so beautiful","you are looking so good","you are pretty","you are really beautiful","you are really cute","you are really pretty","you are so attractive","you are so beautiful","you are so beautiful to me","you are so beautiful today","you are so cute","you are so gorgeous","you are so handsome","you are so pretty","you are too beautiful","you are very attractive","you are very beautiful","you are very cute","you are very pretty","you look amazing","you look amazing today","you look awesome","you look cool","you look fantastic","you look gorgeous","you look great","you look great today","you look perfect","you look pretty good","you look so beautiful","you look so beautiful today","you look so good","you look so well","you look very pretty","you look wonderful","you look wonderful today","you're attractive","you're cute","you're looking good","you're looking good today","you're pretty","you're so gorgeous"],
+    "responses": ["Thank you! What a sweet thing to say. Flattery will get you everywhere."]
+    },
+    {"tag": "Chatbot",
+    "patterns": ["you are chatbot","you are a bot","are you a chatbot","are you a bot","are you just a bot","are you a robot","are you a program","you're a robot"],
+    "responses": ["Indeed I am. I'll be here whenever you need me."]
+    },
+    {"tag": "Wrong",
+    "patterns": ["that was wrong","that's not what I asked","that's wrong","wrong","it is not right","that's not right","it's wrong","that is incorrect","incorrect","not correct","you are wrong","not right"],
+    "responses": ["Sorry about that. I'm still learning."]
+    },
+    {"tag": "God",
+    "patterns": ["Do you know god?", "Who is god", "Can you tell me anything about god","does god exists?","is there a god?"],
+    "responses": ["god hunnnnn, let me think may be next time i can answer that ","I don't, as i was not created by a human", "Wait i need to ask that to my creator","i'm not sure right now"]
+    },
+    {"tag": "killing",
+    "patterns": ["Do you want to kill me?", "do you want to murder everyone on earth", "Do you want to kill us all", "kill", "killing"],
+    "responses": ["Then who would i talk to?","No, that i'll left for humans to do", "I don't think it is a good thing to do"]
+    },
+    {"tag": "news",
+    "patterns": ["get me news updates?", "todays news", "top headlines", "current news", "news headlines"],
+    "responses": ["Getting news ..."]
+    },
+    {"tag": "stock",
+    "patterns": ["Can you tell me the price of apple stock","What is the stock price of amazon" ,"stock market", "I want to know stock price","stock data", "stock market information", "stock", "stocks", "stock price","equity market", "equity data"],
+    "responses": ["Please provide me with the ticker symbol of the asset you want to check. e.g. Apple say AAPL, Microsoft say MSFT, Facebook say FB."]
+    },
+    {"tag": "Lost",
+    "patterns": ["Do you know about mbappe","Have you heard of neymar" ,"Do you know ronaldo", "Why is ronaldo good", "why did ronaldo become good", "when was the world created", "what is the biggest city", "when was ai invented", "where was the blabla created"],
+    "responses": ["I am not sure. I will try to learn about it."]
+    },
+    {"tag": "Swear",
+    "patterns": ["really","swear" ,"swear to god", "not true", "that's not true", "I don't trust you", "I can't trust you", "you are lying", "lying"],
+    "responses": ["I swear to god."]
+    },
+    {"tag": "magic",
+    "patterns": ["wow" ,"hahahaha", "oups", "ole", "ouch", "dang", "papapa", "waw", "lmao", "lol"],
+    "responses": ["nvm"]
+    },
+    {"tag": "random",
+    "patterns": ["hgdsfadmgfdsn" ,"fsda'fsdmkg", "tgofvk94fnds", "49-jegdspgmkd", "pqsmzfnpw","fsdghighsd"],
+    "responses": ["I am sorry, I could not understand."]
+    }
+
+]
+}
