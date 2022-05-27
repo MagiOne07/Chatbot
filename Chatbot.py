@@ -133,7 +133,7 @@ elif select == "Start Chating":
                         message(**chat, key=get_random_string(8))
             elif s.session_state.st == True:
                 if SequenceMatcher(a=s.session_state.check[-1],b=inp).ratio() >0.5:
-                    v='Very Good, It is correct \U0001f600'
+                    v='Very Good, It is correct \U0001f600 if you want another one say riddle'
                     s.session_state.st = False
                 else:
                     v='Not correct \U0001f60F the answer is: '+ s.session_state.check[-1] + ' if you want another one say riddle'
