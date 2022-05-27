@@ -10,3 +10,5 @@ This application is a user friendly AI Chatbot for entertainment purposes. You c
 This chatbot can also have basic conversation about daily life matters on a variety of topics, you can ask the chatbot information about itself, and enjoy an entertaining conversation. 
 
 Eventually, I hope you like it and have a joyful experience!.
+
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
