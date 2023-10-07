@@ -10,4 +10,4 @@ numpy==1.22.3
 protobuf==3.20.1
 sklearn==0.0
 altair==4.0
-SQLAlchemy==2.0.21
+sqlalchemy==2.0.21
