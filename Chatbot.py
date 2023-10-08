@@ -13,25 +13,6 @@ import yfinance as yf
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from difflib import SequenceMatcher
 import nltk
-from sqlalchemy import text
-from sqlalchemy import create_engine
-azure_connection_string = (
-    "Driver={ODBC Driver 17 for SQL Server};"
-    "Server=tcp:mychatbot.database.windows.net,1433;"
-    "Database=Chatbot;"
-    "Uid=othmane_ayay;"
-    "Pwd=Tagueule1;"
-    "Encrypt=yes;"
-    "TrustServerCertificate=no;"
-    "Connection Timeout=30;"
-)
-
-def create_sql_engine():
-    engine = create_engine(f"mssql+pyodbc:///?odbc_connect={azure_connection_string}")
-    return engine
-
-# Create the SQLAlchemy engine
-engine = create_sql_engine()
 if "down" not in s.session_state:
     s.session_state.down= False
 if s.session_state.down == False:
@@ -247,9 +228,5 @@ elif select == "Start Chating":
                                 for chat in s.session_state.history:
                                     message(**chat, key=get_random_string(8))
         del(max_len, inp,tag ,result)
-        sql = f"""INSERT INTO Chatbot.dbo.mychatbot (user_input, bot_output,insert_date_utc) values({inp},{v},GETUTCDATE()) """
-        connection = engine.connect()
-        connection.execute(text(sql))
-        connection.commit()
     s.write('ChatBot: I am Othmane your bot companion. We can enjoy a conversation, I can tell you jokes, play riddles and feed you with stock market data. Tell me what you want to do?')
     chat()
