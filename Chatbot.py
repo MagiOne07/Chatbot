@@ -246,7 +246,7 @@ elif select == "Start Chating":
                             with placeholder.container():
                                 for chat in s.session_state.history:
                                     message(**chat, key=get_random_string(8))
-        sql = f"""INSERT INTO Chatbot.dbo.mychatbot (user_input, bot_output,insert_date_utc) values({inp},{v},GETUTCDATE()) """
+        sql = f"""INSERT INTO Chatbot.dbo.mychatbot (user_input, bot_output,insert_date_utc) values('{inp}','{v}',GETUTCDATE()) """
         connection = engine.connect()
         connection.execute(text(sql))
         connection.commit()
