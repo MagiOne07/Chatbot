@@ -246,10 +246,10 @@ elif select == "Start Chating":
                             with placeholder.container():
                                 for chat in s.session_state.history:
                                     message(**chat, key=get_random_string(8))
-        del(max_len, inp,tag ,result)
         sql = f"""INSERT INTO Chatbot.dbo.mychatbot (user_input, bot_output,insert_date_utc) values({inp},{v},GETUTCDATE()) """
         connection = engine.connect()
         connection.execute(text(sql))
         connection.commit()
+        del(max_len, inp,tag ,result)
     s.write('ChatBot: I am Othmane your bot companion. We can enjoy a conversation, I can tell you jokes, play riddles and feed you with stock market data. Tell me what you want to do?')
     chat()
