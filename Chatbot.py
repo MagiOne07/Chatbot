@@ -13,25 +13,6 @@ import yfinance as yf
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from difflib import SequenceMatcher
 import nltk
-from sqlalchemy import text
-from sqlalchemy import create_engine
-azure_connection_string = (
-    "Driver={ODBC Driver 17 for SQL Server};"
-    "Server=tcp:mychatbot.database.windows.net,1433;"
-    "Database=Chatbot;"
-    "Uid=REMOVED;"
-    "Pwd=REMOVED;"
-    "Encrypt=yes;"
-    "TrustServerCertificate=no;"
-    "Connection Timeout=30;"
-)
-
-def create_sql_engine():
-    engine = create_engine(f"mssql+pyodbc:///?odbc_connect={azure_connection_string}")
-    return engine
-
-# Create the SQLAlchemy engine
-engine = create_sql_engine()
 if "down" not in s.session_state:
     s.session_state.down= False
 if s.session_state.down == False:
@@ -131,6 +112,8 @@ elif select == "Start Chating":
             s.session_state.history = s.session_state.history[-3:]
         inp = s.text_input('User', key='text')
         inp = clean_text(inp)
+        if not inp.strip():
+            return
         result = model.predict(keras.preprocessing.sequence.pad_sequences(tokenizer.texts_to_sequences([inp]),
                                                 truncating='post', maxlen=max_len))
         tag = lbl_encoder.inverse_transform([np.argmax(result)])
@@ -246,10 +229,6 @@ elif select == "Start Chating":
                             with placeholder.container():
                                 for chat in s.session_state.history:
                                     message(**chat, key=get_random_string(8))
-        sql = f"""INSERT INTO Chatbot.dbo.mychatbot (user_input, bot_output,insert_date_utc) values('{inp}','{v}',GETUTCDATE()) """
-        connection = engine.connect()
-        connection.execute(text(sql))
-        connection.commit()
         del(max_len, inp,tag ,result)
     s.write('ChatBot: I am Othmane your bot companion. We can enjoy a conversation, I can tell you jokes, play riddles and feed you with stock market data. Tell me what you want to do?')
     chat()
